@@ -1,0 +1,42 @@
+.btn {
+    border: none;
+    border-radius: 30px;
+
+    cursor: pointer;
+    padding: 16px 20px;
+
+    &:disabled {
+        opacity: 0.6;
+    }
+
+    &.primary {
+        color: white;
+
+        @apply bg-gradient-to-l from-primary-main to-secondary-main;
+      
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    &.secondary {
+        background: white;
+
+        @apply text-title;
+      
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 768px) {
+    .btn {
+        padding: 20px 40px;
+
+        .primary {
+            font-size: 24px;
+        } 
+        .secondary {
+            font-size: 16px;
+        }
+    }
+}

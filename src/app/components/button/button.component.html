@@ -1,0 +1,11 @@
+<button 
+    (click)="onClick()" 
+    [class]="'btn ' + variant"
+    [disabled]="disabled"
+>
+    @if(!loading){
+        {{ label }}
+    }@else {
+        carregando...
+    }
+</button>
