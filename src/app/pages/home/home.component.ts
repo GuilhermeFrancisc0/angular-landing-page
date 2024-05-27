@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+import { ArticleComponent } from './article/article.component';
 import { BenefitComponent } from './benefit/benefit.component';
 import { HeaderComponent } from './header/header.component';
 import { HeadlineComponent } from './headline/headline.component';
@@ -15,6 +16,7 @@ import { SubheadlineComponent } from './subheadline/subheadline.component';
     SubheadlineComponent,
     NewsletterFormComponent,
     BenefitComponent,
+    ArticleComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
