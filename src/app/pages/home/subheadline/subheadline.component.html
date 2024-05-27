@@ -1,14 +1,16 @@
-<section class="px-[70px]">
+<section class="px-[30px] md:px-[70px]">
   <div class="flex items-center justify-center gap-10">
-    <div class="border-solid border-b-[10px] pb-[20px] border-secondary-main">
+    <div
+      class="border-solid md:border-b-[10px] border-b-[5px] md:pb-[20px] pb-[10px] border-secondary-main"
+    >
       <h2
-        class="text-5xl leading-tight font-semibold font-['Roboto'] text-title"
+        class="text-xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl leading-tight font-semibold font-['Roboto'] text-title"
       >
         55% dos<br />
         programadores
       </h2>
     </div>
-    <p class="text-2xl italic font-light">
+    <p class="text-base xl:text-3xl lg:text-2xl md:text-xl italic font-light">
       não sabem como lidar com problemas de
       <b
         class="bg-gradient-to-l from-primary-light to-secondary-main text-transparent bg-clip-text font-bold"
@@ -19,7 +21,10 @@
     </p>
   </div>
 
-  <div class="flex items-center justify-center">
-    <app-button label="consulte o site do angular" (click)="gotoAngularPage()"></app-button>
+  <div class="flex items-center justify-center md:mt-8 mt-4">
+    <app-button
+      label="consulte o site do angular"
+      (click)="gotoAngularPage()"
+    ></app-button>
   </div>
 </section>
