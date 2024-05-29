@@ -11,7 +11,7 @@ describe('ButtonComponent', () => {
       imports: [ButtonComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(ButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
@@ -19,5 +19,17 @@ describe('ButtonComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should emit on click', () => {
+    spyOn(component.handleClick, 'emit');
+
+    const nativeElement = fixture.nativeElement;
+    const button = nativeElement.querySelector('button');
+    button.dispatchEvent(new Event('click'));
+
+    fixture.detectChanges();
+
+    expect(component.handleClick.emit).toHaveBeenCalled();
   });
 });
