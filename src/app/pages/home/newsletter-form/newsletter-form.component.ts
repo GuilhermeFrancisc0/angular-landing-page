@@ -24,9 +24,9 @@ export class NewsletterFormComponent {
   }
 
   onSubmit() {
-    this.loading.set(true);
-
     if (this.form.valid) {
+      this.loading.set(true);
+      
       this.service.sendData(this.form.value.name, this.form.value.email).subscribe({
         next: () => {
           this.form.reset();
