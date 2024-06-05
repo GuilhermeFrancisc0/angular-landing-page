@@ -11,7 +11,7 @@
 
 ## About
 
-The project is a responsive landing page created in Angular 17 that contains the SSR engine. [Demo here](https://angular-landing-page-ebon.vercel.app/)
+The project is a responsive landing page created in Angular 17 that contains the SSR engine. <a href="https://angular-landing-page-ebon.vercel.app/" target="_blank">Demo Here</a>
 
 ## Goals
 
