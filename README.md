@@ -9,21 +9,23 @@
   <img src="./src/assets/template.png" alt="template" width="50%"/>
 </div>
 
-## About
+## 📌About
 
-The project is a responsive landing page created in Angular 17 that contains the SSR engine. <a href="https://angular-landing-page-ebon.vercel.app/" target="_blank">Demo Here</a>
+The project is a responsive landing page created in Angular 17 that contains the SSR engine. [Demo Here](https://angular-landing-page-ebon.vercel.app/)
 
-## Goals
+## 📈Goals
 
 - Test some new features of [Angular](https://angular.dev) 17
   - New block template syntax (@for, @if, etc...)
+  - Image optimization (NgOptimizedImage)
   - Server side rendering (SSR)
   - Standalone components
   - Signals
 - Use [TailwindCSS](https://tailwindcss.com) to generate responsive and styled components
 - Use [Karma](https://karma-runner.github.io) and [Jasmine](https://jasmine.github.io) to generate automated tests
+- Use [Vercel](https://vercel.com/) for project management
 
-## Folder Structure
+## 📁Folder Structure
 
 ```bash
 src/
@@ -47,15 +49,15 @@ src/
  └── assets/                          # Static resources (images, fonts, etc.)
 ```
 
-## Code Coverage
+## 🧪Code Coverage
 
 ![alt code-coverage](./src/assets/code-coverage.png)
 
 - To check the code coverage test
-  - Run the test script
-  - Open the `index.html` file generated in the `coverage\angular-landing-page` folder in the browser
+  - Run the [test script](#scripts-available)
+  - After running the script an `index.html` file will be generated in the `coverage\angular-landing-page` folder, open it in the browser
 
-## Development Setup
+## ⚙Development Setup
 
 ### Prerequisites
 
@@ -141,7 +143,7 @@ src/
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-## Commit pattern
+## 📝Commit pattern
 
 - Format: `(<type>): <subject>`
 - Example:
@@ -154,10 +156,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
   +------------> Type: chore, docs, feature, fix, refactor, style, or test.
   ```
 - Types:
-  - feature: new feature for the user, not a new feature for build script
-  - fix: bug fix for the user, not a fix to a build script
-  - docs: changes to the documentation
-  - style: formatting, missing semi colons, etc; no production code change
-  - refactor: refactoring production code, eg. renaming a variable
-  - test: adding missing tests, refactoring tests; no production code change
-  - chore: updating grunt tasks etc; no production code change
+  - `feature`: new feature for the user, not a new feature for build script
+  - `fix`: bug fix for the user, not a fix to a build script
+  - `docs`: changes to the documentation
+  - `style`: formatting, missing semi colons, etc; no production code change
+  - `refactor`: refactoring production code, eg. renaming a variable
+  - `test`: adding missing tests, refactoring tests; no production code change
+  - `chore`: updating grunt tasks etc; no production code change
